@@ -291,10 +291,6 @@ jobs:
 
           # Run perl command to modify UTS_VERSION
           perl -pi -e 's{UTS_VERSION="\$\(echo \$UTS_VERSION \$CONFIG_FLAGS \$TIMESTAMP \| cut -b -\$UTS_LEN\)"}{UTS_VERSION="#1 SMP PREEMPT $(TZ="Asia/Bangkok" date +"%a %b %d %T UTC+7 %Y")"}' ./common/scripts/mkcompile_h
-
-          # Print the updated UTS_VERSION to the GitHub Actions log
-          echo "Updated UTS_VERSION:"
-          grep UTS_VERSION ./common/scripts/mkcompile_h
           
           echo "Building the kernel..."
           if [ -f "build/build.sh" ]; then
