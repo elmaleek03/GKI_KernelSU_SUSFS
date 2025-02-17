@@ -1,4 +1,4 @@
-# Wild Plus Kernels for Android GKI 2.0 Devices and Others
+# Bromo Kernel for Android GKI 2.0 Devices and Others
 
 ## Your warranty is no longer valid!
 
