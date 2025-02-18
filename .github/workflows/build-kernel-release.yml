@@ -78,7 +78,7 @@ jobs:
     runs-on: ubuntu-latest
     needs:
         - build-kernel-a13-5-10
-        - build-kernel-a14-6-1
+        # - build-kernel-a14-6-1
     if: ${{ inputs.make_release }}
     env:
       REPO_OWNER: WildPlusKernel
